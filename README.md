@@ -22,15 +22,13 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-#### To get the copy of this project, please go ahead and clone the project from the source repository and run `git clone https://github.com/mwafrika/portfolio-microverse.git`
+#### To get the copy of this project, please go ahead and follow the steps below:
+
+- Open your terminal
+- clone the project from the source repository by running run: `git clone https://github.com/mwafrika/portfolio-microverse.git`
+- Open the index.html file in the browser or use the live server extension for vscode.
 
 #### Next step is to open the cloned repository and run the following command to install the project dependencies locally `npm install` in
-
-### Usage
-
-#### run the following command to fix the linting errors
-
-` npm run fix`
 
 ## Authors
 
