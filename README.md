@@ -4,7 +4,7 @@
 
 > This is the very first project at Microverse that initiate students on how to use Git/Github and Linting for their projects
 
-![screenshot](./src/assert/images/portofolio.PNG)
+![screenshot](./src/assert/images/mobile.PNG)
 
 ## Built With
 

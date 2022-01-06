@@ -4,22 +4,15 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.container {
-  position: absolute;
+body {
   width: 375px;
   height: 718px;
   left: 0;
   top: 0;
   padding: 20px;
   background: #fff;
-  background-image: url("../assert/images/background.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-bottom-left-radius: 50px;
+  height: 100vh;
 }
-
 .heading {
   position: static;
   width: 327px;
@@ -90,6 +83,7 @@ header nav {
   align-items: flex-start;
   padding: 8px;
   width: 40px;
+  flex-basis: 18%;
   height: 40px;
   right: 24px;
   top: calc(50% - 40px / 2);
@@ -128,4 +122,12 @@ ul li a {
   height: 20px;
   left: 63px;
   top: 470px;
+}
+
+.headline {
+  background-image: url("../assert/images/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom-left-radius: 50px;
 }
