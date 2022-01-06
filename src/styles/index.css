@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Urbanist:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Urbanist:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Urbanist:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap");
 html,
 body {
   box-sizing: border-box;
@@ -9,7 +12,7 @@ body {
   width: 375px;
   left: 0;
   top: 0;
-  padding: 20px;
+  padding: 10px 0 10px 10px;
   background: #fff;
   height: 100vh;
 }
@@ -21,6 +24,7 @@ body {
   left: 24px;
   top: 114px;
   font-style: normal;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -38,6 +42,7 @@ body {
   top: 276px;
   font-style: normal;
   font-weight: normal;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
@@ -55,6 +60,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  font-family: "Poppins", sans-serif;
   color: #7f8cff;
   flex: none;
   order: 0;
