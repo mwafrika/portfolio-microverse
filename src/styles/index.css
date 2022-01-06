@@ -4,15 +4,16 @@ body {
   margin: 0;
   padding: 0;
 }
+
 body {
   width: 375px;
-  height: 718px;
   left: 0;
   top: 0;
   padding: 20px;
   background: #fff;
   height: 100vh;
 }
+
 .heading {
   position: static;
   width: 327px;
