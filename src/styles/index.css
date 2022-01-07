@@ -144,7 +144,7 @@ ul li a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  gap: 50px;
+  /* gap: 50px; */
 }
 
 .tonic {
@@ -157,15 +157,11 @@ ul li a {
   /* height: 552px; */
   height: auto;
   left: calc(50% - 327px / 2);
-  top: 114px;
   background: #ffffff;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 88px 0px;
+  margin: 50px 0px;
 }
 
 .tonic h1 {
