@@ -30,14 +30,14 @@ body {
   align-items: center;
   color: #172b4d;
   margin: 12px 0;
+  ;
 }
 
 .description {
   position: static;
   width: 327px;
   height: 146px;
-  left: 24px;
-  top: 276px;
+  margin-left: 24px;
   font-style: normal;
   font-weight: normal;
   font-family: "Poppins", sans-serif;
@@ -48,6 +48,8 @@ body {
   order: 1;
   flex-grow: 0;
   margin: 12px 0;
+  text-align: center
+
 }
 
 .subdescription {
@@ -298,7 +300,10 @@ ul li a {
 }
 
 .contact {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  width: 250px;
+margin-left: 51px;
 }
 .btn-tonic:hover {
   background: #6070ff;
