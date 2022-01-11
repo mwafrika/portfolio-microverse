@@ -30,7 +30,6 @@ body {
   align-items: center;
   color: #172b4d;
   margin: 12px 0;
-  ;
 }
 
 .description {
@@ -43,13 +42,11 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #344563;
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 12px 0;
-  text-align: center
-
+  text-align: center;
+  color: #fff;
 }
 
 .subdescription {
@@ -127,13 +124,6 @@ header img {
 
 .toolbar img:hover {
   cursor: pointer;
-}
-
-.myname {
-  background: orange;
-}
-.myname {
-  background: green;
 }
 
 .social-container ul,
@@ -299,15 +289,26 @@ ul li a {
   cursor: pointer;
 }
 
+.btn-tonic:active {
+  background: #6070ff;
+  color: #fff;
+}
+
+.btn-tonic:hover {
+  opacity: 0.7;
+}
+
 .contact {
   display: flex;
   align-items: center;
   width: 250px;
-margin-left: 51px;
-}
-.btn-tonic:hover {
-  background: #6070ff;
+  margin-left: 51px;
   color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
 }
 
 .btn {
@@ -375,6 +376,7 @@ margin-left: 51px;
   flex-direction: column;
   width: 90%;
 }
+
 .form-container .form-group {
   display: flex;
   flex-direction: column;
@@ -408,4 +410,12 @@ margin-left: 51px;
   font-size: 15px;
   line-height: 20px;
   color: #253858;
+}
+
+.contact-section {
+  background-image: url("../assert/images/Contact-me.svg");
+  padding-top: 114px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

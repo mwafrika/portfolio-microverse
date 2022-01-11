@@ -56,7 +56,7 @@
     <section class="works">
       <section class="tonic">
         <img src="../assert/images/tonic1.png" alt="" />
-        <h1>Tonic</h1>
+        <h3>Tonic</h3>
         <ul class="tonic-list">
           <li class="black">CANOPY</li>
           <li class="dot"></li>
@@ -74,7 +74,7 @@
           <li>javascript</li>
         </ul>
         <div class="btn">
-          <button class="btn-tonic">See Project</button>
+          <button type="button" class="btn-tonic">See Project</button>
         </div>
       </section>
 
@@ -98,7 +98,7 @@
           <li>javascript</li>
         </ul>
         <div class="btn">
-          <button class="btn-tonic">See Project</button>
+          <button type="button" class="btn-tonic">See Project</button>
         </div>
       </section>
 
@@ -122,7 +122,7 @@
           <li>javascript</li>
         </ul>
         <div class="btn">
-          <button class="btn-tonic">See Project</button>
+          <button type="button" class="btn-tonic">See Project</button>
         </div>
       </section>
       <section class="tonic">
@@ -145,7 +145,7 @@
           <li>javascript</li>
         </ul>
         <div class="btn">
-          <button class="btn-tonic">See Project</button>
+          <button type="button" class="btn-tonic">See Project</button>
         </div>
       </section>
       <section>
@@ -187,7 +187,7 @@
           </ul>
         </div>
         <div class="btn">
-          <button class="btn-tonic">Get my resume</button>
+          <button type="button" class="btn-tonic">Get my resume</button>
         </div>
         <div class="language-title">
           <p>Language</p>
@@ -221,8 +221,8 @@
           </ul>
         </section>
       </section>
-      <section>
-        <form action="" method="post">
+      <section class="contact-section">
+        <form method="post">
           <h3 class="heading contact">Contact Me</h3>
           <p class="description">
             I’m currently looking for a new job, if you have a project you would
@@ -237,7 +237,7 @@
                 name="name"
                 id="name"
                 placeholder="Name"
-              />
+                maxlength="30"/>
             </div>
             <div class="form-group">
               <input
@@ -255,10 +255,11 @@
                 cols="30"
                 rows="10"
                 placeholder="Message"
+                maxlength="500"     
               ></textarea>
             </div>
             <div class="btn">
-              <button class="btn-tonic">Get It Touch</button>
+              <button class="btn-tonic" type="button">Get It Touch</button>
             </div>
           </div>
         </form>
