@@ -33,10 +33,8 @@ body {
 }
 
 .description {
-  position: static;
   width: 327px;
   height: 146px;
-  margin-left: 24px;
   font-style: normal;
   font-weight: normal;
   font-family: "Poppins", sans-serif;
@@ -45,8 +43,12 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
-  text-align: center;
+  color: #172b4d;
+}
+
+.desc-white {
   color: #fff;
+  text-align: center;
 }
 
 .subdescription {
@@ -269,6 +271,11 @@ ul li a {
   border-radius: 8px 10px 8px 10px;
 }
 
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+}
+
 .btn-tonic {
   flex-direction: row;
   align-items: center;
@@ -289,13 +296,13 @@ ul li a {
   cursor: pointer;
 }
 
-.btn-tonic:active {
+.btn-tonic:hover {
   background: #6070ff;
   color: #fff;
 }
 
-.btn-tonic:hover {
-  opacity: 0.7;
+.btn-tonic-last:hover {
+  border: 1px solid #fff;
 }
 
 .contact {
