@@ -28,6 +28,15 @@ img:hover {
   }
 }
 
+input:hover {
+  transform: translate(17px, 10px);
+}
+
+textarea:hover {
+  transform: translate(17px, 10px);
+
+}
+
 @media (min-width: 640px) and (max-width: 767px) {
 }
 
