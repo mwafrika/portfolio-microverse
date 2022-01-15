@@ -613,7 +613,12 @@ form {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  color: #344563;
   margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .list {
@@ -623,13 +628,15 @@ form {
 }
 
 .list .back {
-  background-color: #ebebff;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 10px 22px;
   border-radius: 8px;
+  padding: 10px 50px 30px 5px;
   margin: 50px 10px;
+  width: 120px;
+  height: 120px;
+  background-color: #f7f7f9;
 }
 
 .border {
@@ -668,10 +675,6 @@ form {
 
   .social {
     margin-right: 5px;
-  }
-
-  .list .back {
-    padding: 5px 5px;
   }
 
   .heading-about {
@@ -731,8 +734,11 @@ form {
   }
 
   .list .back {
-    padding: 5px 5px;
-    margin: 50px 2px;
+    padding: 10px 50px 30px 5px;
+    margin: 50px 10px;
+    width: 120px;
+    height: 120px;
+    background-color: #f7f7f9;
   }
 
   .center {
@@ -789,9 +795,12 @@ form {
 
 @media (min-width: 1024px) and (max-width: 1279px) {
   .list .back {
-    padding: 5px 11px;
     border-radius: 8px;
-    margin: 10px 10px;
+    padding: 10px 50px 30px 5px;
+    margin: 50px 10px;
+    width: 120px;
+    height: 120px;
+    background-color: #f7f7f9;
   }
 
   .text-home-about {
@@ -1027,9 +1036,11 @@ form {
     width: 330px;
     justify-content: flex-start;
     align-items: center;
-    padding: 5px 22px;
     border-radius: 8px;
-    margin: 10px 10px;
+    padding: 10px 50px 30px 5px;
+    width: 120px;
+    height: 120px;
+    background-color: #f7f7f9;
   }
 
   .list .back a {
