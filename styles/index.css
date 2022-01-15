@@ -1033,7 +1033,6 @@ form {
 
   .list .back {
     flex-direction: row;
-    width: 330px;
     justify-content: flex-start;
     align-items: center;
     border-radius: 8px;
