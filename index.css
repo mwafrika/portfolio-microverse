@@ -149,7 +149,7 @@ textarea:hover {
   grid-column: 1/-1;
   width: 100%;
   min-height: 630px;
-  background-image: url("../assert/images/Contact-me.svg");
+  background-image: url("./assert/images/Contact-me.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -248,7 +248,7 @@ textarea:hover {
   height: 674px;
   height: 846px;
   border-bottom-left-radius: 19%;
-  background-image: url("../assert/images/try.svg");
+  background-image: url("./assert/images/try.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -496,7 +496,7 @@ form {
   grid-column: 2/3;
   width: 544px;
   height: 448px;
-  background-image: url("../assert/images/desk-1.svg");
+  background-image: url("./assert/images/desk-1.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -508,7 +508,7 @@ form {
   grid-column: 2/3;
   width: 544px;
   height: 448px;
-  background-image: url("../assert/images/desk2.svg");
+  background-image: url("./assert/images/desk2.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -520,7 +520,7 @@ form {
   grid-column: 2/3;
   width: 544px;
   height: 448px;
-  background-image: url("../assert/images/desc3.svg");
+  background-image: url("./assert/images/desc3.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -532,7 +532,7 @@ form {
   grid-column: 2/3;
   width: 544px;
   height: 448px;
-  background-image: url("../assert/images/desk4.svg");
+  background-image: url("./assert/images/desk4.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1111,7 +1111,7 @@ form {
   }
 
   .image-container {
-    background-image: url("../assert/images/desc3.svg");
+    background-image: url("./assert/images/desc3.svg");
     width: 380px;
   }
 
