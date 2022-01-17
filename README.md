@@ -2,9 +2,18 @@
 
 # Basic portofolio project
 
+
+### [Live Demo](https://mwafrika.github.io/portfolio-microverse/)
+### This is the live demo of the portfolio project by using mobile first approach for the responsive web design.
+
+
 > This is the very first project at Microverse that initiate students on how to use Git/Github and Linting for their projects
 
-![screenshot](./src/assert/images/mobile4.png)
+[Live Demo](https://mwafrika.github.io/portfolio-microverse/)
+
+This is the live demo of the portfolio project by using mobile first approach for the responsive web design.
+
+![screenshot](./src/assert/images/desktop2.png)
 
 ## Built With
 
