@@ -445,7 +445,7 @@ form {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 1156px;
+  /* width: 1156px; */
   height: 496px;
   border-radius: 24px;
 }
@@ -850,10 +850,6 @@ form {
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
-  .main {
-    width: 1279px;
-  }
-
   .card-1-1 {
     width: 800px;
     height: 500px;
@@ -1016,10 +1012,6 @@ form {
 }
 
 @media (min-width: 1536px) {
-  .main {
-    width: 1536px;
-  }
-
   .works {
     place-items: center;
     row-gap: 142px;
