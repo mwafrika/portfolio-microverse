@@ -106,6 +106,7 @@ textarea:hover {
   align-items: center;
   width: 100%;
   height: 72px;
+  position: sticky;
   background: #fff;
 }
 
@@ -173,14 +174,17 @@ textarea:hover {
 
 .about {
   grid-area: about-me;
-  width: 100%;
+  /* width: 100%; */
   margin-bottom: -278px;
   height: 924px;
   background-color: white;
   grid-column: 1/-1;
-  padding: 146px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  padding: 8%;
+  /* padding: 146px; */
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
   border-top-right-radius: 130px;
 }
 
@@ -194,6 +198,7 @@ textarea:hover {
 
 .about-img {
   grid-column: 2/3;
+  width: 45%;
   grid-row: 1/2;
   display: flex;
   flex-direction: column;
@@ -204,6 +209,7 @@ textarea:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 51%;
 }
 
 .btn-tonic {
@@ -543,7 +549,7 @@ form {
 }
 
 .text-home-about {
-  width: 100%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -611,7 +617,7 @@ form {
 .title {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
   color: #344563;
   margin-bottom: 30px;
   font-family: "Poppins", sans-serif;
@@ -640,7 +646,7 @@ form {
 
 .border {
   background: #dfe1e6;
-  width: 100%;
+  width: 82%;
   height: 1px;
   margin-bottom: 30px;
 }
@@ -924,11 +930,13 @@ form {
   }
 
   .works {
-    place-items: center;
+    /* place-items: center; */
+    margin: 0 auto;
     row-gap: 142px;
     width: 100%;
     height: 2694px;
-    grid-template-columns: 8.875rem 1fr 8.875rem;
+    grid-template-columns: 5% 80% 5%;
+    /* grid-template-columns: 5.875rem 1fr 8.875rem; */
   }
 
   .card-1 {
@@ -995,6 +1003,9 @@ form {
 
   .navbar {
     margin-bottom: -20px;
+  }
+  .about {
+    justify-content: space-around;
   }
 }
 
