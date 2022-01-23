@@ -10,6 +10,7 @@ body,
 html {
   overflow-x: hidden;
   width: 100%;
+  max-width: 100vw;
   height: 100%;
 }
 
@@ -651,120 +652,337 @@ form {
   margin-bottom: 30px;
 }
 
-@media (min-width: 640px) and (max-width: 767px) {
-  .main {
-    width: 767px;
+.card-1-2 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* media query to use  */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+  .navbar {
+    max-width: 100vw;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 25px;
   }
 
-  .navbar {
+  .navbar-container {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .headline {
     width: 100%;
-    justify-content: space-around;
+    left: 0;
+    padding: 0 40px;
+  }
+
+  .description {
+    width: 58%;
+  }
+
+  .works {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    column-gap: 20px;
+    height: auto;
+    width: 560px;
+    margin: 15px;
   }
 
   .card-1,
   .card-2,
   .card-3,
   .card-4 {
-    width: 627px;
-    padding-left: 5px;
-  }
-
-  .card-1-1 ul li {
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  .cano {
-    font-size: 14px;
-  }
-
-  .list {
-    width: 340px;
-  }
-
-  .social {
-    margin-right: 5px;
-  }
-
-  .heading-about {
-    width: 350px;
-  }
-
-  .center {
-    max-width: 767px;
-  }
-
-  .description-about {
-    width: 300px;
-  }
-
-  .about {
-    max-width: 767px;
-    padding-left: 20px;
-  }
-
-  .contact-me {
-    justify-content: flex-start;
-  }
-
-  .image-container,
-  .image-container2,
-  .image-container3,
-  .image-container4 {
-    width: 238px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 3rem;
   }
 
   .card-1-1 {
-    height: 450px;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-left: 0;
   }
 
-  .headline {
-    max-width: 767px;
-    position: absolute;
-    height: 268px;
-    left: 260px;
-    left: 40px;
+  .about {
+    flex-direction: column;
+    height: 1550px;
+    width: 100%;
+    margin-bottom: -282px;
+    padding-bottom: 145px;
   }
 
-  .description {
-    width: 560px;
-  }
-
-  .works {
-    column-gap: 0;
-    max-width: 767px;
-    grid-template-columns: 70px 1fr 70px;
-  }
-
-  .card-1-2 {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .main {
-    width: 1023px;
-    row-gap: 0;
-  }
-
-  .title {
-    width: 90%;
+  .heading-about {
+    width: 300px;
   }
 
   .list {
-    width: 215px;
+    flex-direction: column;
+  }
+
+  .about-img ul {
+    width: 100%;
+  }
+
+  .list .back {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px 50px 30px 5px;
+    width: 100%;
+    height: 100px;
+    background-color: #f7f7f9;
+    margin: 30px 10px;
+  }
+
+  .about-img {
+    width: 100%;
+    height: auto;
+    column-gap: 30px;
+  }
+
+  .text-home-about {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  .center {
+    width: 100%;
+  }
+
+  .border {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .navbar {
+    max-width: 100vw;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 25px;
+    /* margin-bottom: -80px; */
+  }
+
+  .headline {
+    width: 100%;
+    left: 0;
+    padding: 0 40px;
+    top: calc(35% - 268px / 2);
+  }
+
+  .heading {
+    font-size: 2rem;
+    width: 280px;
+  }
+
+  .description {
+    width: 36%;
+    padding-bottom: 30px;
+  }
+
+  .navbar-container {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  form input {
+    width: 344px;
+  }
+
+  .social-container {
+    width: 30%;
+    margin-top: 100px;
+  }
+
+  .works {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    column-gap: 20px;
+    height: auto;
+    width: 62%;
+    margin: 15px;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 3rem;
+  }
+
+  .card-1-1 {
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-left: 0;
+  }
+
+  .about {
+    flex-direction: column;
+    padding-bottom: 145px;
+    padding: 2%;
+    height: 1649px;
+    width: 100%;
+    margin-bottom: -270px;
+  }
+
+  .heading-about {
+    width: 300px;
+  }
+
+  .list {
+    flex-direction: column;
+  }
+
+  .about-img ul {
+    width: 100%;
+  }
+
+  .list .back {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px 50px 30px 5px;
+    width: 100%;
+    height: 100px;
+    background-color: #f7f7f9;
+    margin: 30px 10px;
+  }
+
+  .about-img {
+    height: auto;
+    column-gap: 30px;
+    width: 384px;
+  }
+
+  .text-home-about {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  .center {
+    width: 100%;
+  }
+  .contact-me {
+    width: 60%;
+  }
+
+  .border {
+    width: 100%;
+  }
+
+  .description-about {
+    width: 100%;
+  }
+
+  .form-container {
+    margin: 0 auto;
+  }
+
+  .form-container .form-group {
+    display: flex;
+
+    margin-bottom: 20px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    max-width: 100vw;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 25px;
+    margin-bottom: -80px;
+  }
+
+  .navbar-container {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .headline {
+    width: 100%;
+    left: 0;
+    padding: 0 40px;
+  }
+
+  .description {
+    width: 70%;
+  }
+
+  .works {
+    grid-template-columns: 2rem 1fr 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    column-gap: 20px;
+    height: auto;
+    width: 100%;
+    place-items: start;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 77%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 3rem;
+    padding-left: 20px;
   }
 
   .card-1-2 {
     margin-left: 30px;
     margin-right: 30px;
+    width: 45%;
   }
 
-  .card-1 {
-    width: 1059px;
-    margin-right: 75px;
-    padding-left: 20px;
+  .image-container {
+    width: 250px;
   }
 
   .social-container {
@@ -772,485 +990,156 @@ form {
     margin-top: 0;
   }
 
-  .headline {
-    left: 165px;
-    place-items: flex-start;
+  .card-1-1 {
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-left: 0;
   }
 
-  .list .back {
-    padding: 10px 50px 30px 5px;
-    margin: 50px 10px;
-    width: 100px;
-    height: 100px;
-    background-color: #f7f7f9;
+  .about {
+    flex-direction: row;
+    height: 1110px;
+    width: 100%;
+    padding: 50px;
+    padding-right: 140px;
+    padding-bottom: 145px;
+    margin-bottom: -570px;
   }
 
-  .border {
-    width: 90%;
-  }
-
-  .center {
-    align-items: flex-start;
+  .heading-about {
+    width: 300px;
   }
 
   .about-img ul {
     justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
   }
 
+  .list .back {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px 22px 30px 5px;
+    width: 100%;
+    height: 100px;
+    background-color: #f7f7f9;
+    margin: 30px 10px;
+  }
+
+  .about-img {
+    width: 100%;
+    height: auto;
+    column-gap: 30px;
+  }
+
+  .text-home-about {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .description-about {
+    width: 70%;
+  }
+  .title {
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  .text-home-about {
+    width: 80%;
+  }
+  .center {
+    width: 100%;
+  }
+
+  .list {
+    justify-content: flex-start;
+  }
+
+  .list .back {
+    width: 100px;
+  }
+
+  .border {
+    width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media screen and (min-width: 992px) {
   .works {
-    column-gap: 0;
-    place-items: flex-start;
-    margin-bottom: -240px;
+    margin: 30px;
   }
 
   .card-1,
   .card-2,
   .card-3,
   .card-4 {
-    width: 800px;
-    height: 450px;
-    padding-left: 0;
+    width: 95%;
   }
 
-  .heading {
-    width: 480px;
-  }
-
-  .heading-about {
-    width: 242px;
+  .about {
+    padding-right: 70px;
   }
 
   .description-about {
-    width: 380px;
+    width: 80%;
   }
 
-  .image-container,
-  .image-container2,
-  .image-container3,
-  .image-container4 {
-    width: 360px;
-    height: 324px;
-  }
-
-  .header {
-    height: 531px;
-    margin-top: -193px;
-  }
-
-  .card-1-1 {
-    width: 342px;
-    margin-left: 0;
-    margin-left: 25px;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .card-1-1 {
-    width: 800px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 24px;
+  .about-img {
+    padding: 24px;
   }
 
   .card-1-2 {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
-  .works {
-    place-items: center;
-    width: 100%;
-    height: 2694px;
-    grid-template-columns: 6.875rem 1fr 6.875rem;
-    column-gap: 0;
-  }
-
-  .list .back {
-    border-radius: 8px;
-    padding: 10px 50px 30px 5px;
-    margin: 50px 10px;
-    width: 120px;
-    height: 120px;
-    background-color: #f7f7f9;
-  }
-
-  .text-home-about {
-    margin-right: 50px;
-  }
-
-  .header {
-    height: 667px;
-    border-bottom-left-radius: 25%;
-  }
-
-  .card-3 {
-    width: 1059px;
-    margin-right: 75px;
-    padding-left: 20px;
-  }
-
-  .card-2 {
-    width: 1059px;
-    margin-right: 75px;
-    padding-left: 20px;
-  }
-
-  .card-1 {
-    width: 1059px;
-    margin-right: 75px;
-    padding-left: 20px;
-  }
-
-  .card-4 {
-    width: 1059px;
-    margin-right: 75px;
-    padding-left: 20px;
-  }
-
-  .navbar {
-    justify-content: space-around;
-    width: 100%;
-    margin-bottom: -20px;
-  }
-}
-
-@media (min-width: 1280px) and (max-width: 1535px) {
-  .main {
-    width: 1535px;
-  }
-
-  .header {
-    height: 793px;
-  }
-
-  .heading-about {
-    width: 396px;
-  }
-
-  .works {
-    /* place-items: center; */
-    margin: 0 auto;
-    row-gap: 142px;
-    width: 100%;
-    height: 2694px;
-    grid-template-columns: 5% 80% 5%;
-    /* grid-template-columns: 5.875rem 1fr 8.875rem; */
-  }
-
-  .card-1 {
-    grid-area: work1;
-    background-color: white;
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 1240px;
-    height: 534px;
-    border-radius: 24px;
-  }
-
-  .card-2 {
-    grid-area: work2;
-    background-color: white;
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 1240px;
-    height: 534px;
-    border-radius: 24px;
-  }
-
-  .card-3 {
-    grid-area: work3;
-    background-color: white;
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 1240px;
-    height: 534px;
-    border-radius: 24px;
-  }
-
-  .card-4 {
-    grid-area: work4;
-    background-color: white;
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 1240px;
-    height: 534px;
-    border-radius: 24px;
+    width: 50%;
   }
 
   .card-1-1 {
-    width: 800px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 24px;
-  }
-
-  .card-1-2 {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
-  .navbar {
-    margin-bottom: -20px;
-  }
-  .about {
-    justify-content: space-around;
-  }
-}
-
-@media (min-width: 1536px) {
-  .works {
-    place-items: center;
-    row-gap: 142px;
-    width: 100%;
-    height: 2694px;
-    grid-template-columns: 8.875rem 1fr 8.875rem;
-  }
-
-  .card-1 {
-    grid-area: work1;
-    background-color: white;
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 1240px;
-    height: 534px;
-    border-radius: 24px;
-  }
-
-  .card-2 {
-    grid-area: work2;
-    background-color: white;
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 1240px;
-    height: 534px;
-    border-radius: 24px;
-  }
-
-  .card-3 {
-    grid-area: work3;
-    background-color: white;
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 1240px;
-    height: 534px;
-    border-radius: 24px;
-  }
-
-  .card-4 {
-    grid-area: work4;
-    background-color: white;
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 1240px;
-    height: 534px;
-    border-radius: 24px;
-  }
-
-  .card-1-1 {
-    width: 800px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 24px;
-  }
-
-  .card-1-2 {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
-  .header {
-    height: 48.5rem;
-  }
-
-  .mobile {
-    display: none;
-  }
-}
-
-@media (max-width: 425px) {
-  .header {
-    max-width: 425px;
-    height: 600px;
-  }
-
-  .card-1-1 {
-    height: 300px;
-    width: 380px;
+    width: 50%;
   }
 
   .image-container {
-    background-image: url("./assert/images/desc3.svg");
-    width: 380px;
+    width: 95%;
   }
 
-  .card-1 {
-    grid-area: work1;
-    background-color: white;
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 380px;
-    max-width: 425px;
-    height: auto;
-    border-radius: 24px;
+  .title {
+    align-items: center;
   }
 
-  .card-2 {
-    grid-area: work2;
-    background-color: white;
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around;
-    width: 380px;
-    max-width: 425px;
-    height: auto;
-    border-radius: 24px;
+  .social-container {
+    width: 50%;
   }
+}
 
-  .card-3 {
-    grid-area: work3;
-    background-color: white;
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 380px;
-    max-width: 425px;
-    height: auto;
-    border-radius: 24px;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media screen and (min-width: 1100px) {
+  .description-about {
+    width: 95%;
   }
+}
 
-  .card-4 {
-    grid-area: work4;
-    background-color: white;
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around;
-    width: 380px;
-    max-width: 425px;
-    height: auto;
-    border-radius: 24px;
+@media (min-width: 768px) {
+  .social-container {
+    width: 50%;
   }
-
   .center {
-    padding: 0;
-    width: 100%;
-    height: 577px;
-    max-width: 425px;
-    margin: 24px 0;
+    align-items: stretch;
   }
 
   .contact-me {
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  form input {
     width: 100%;
   }
 
-  .about {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: -275px;
-    height: 1280px;
-    border-top-right-radius: 90px;
+  form {
+    max-width: 100vw;
   }
+}
 
-  .list {
-    flex-direction: column;
-  }
-
-  .heading-about {
-    width: 300px;
-  }
-
-  .description-about {
-    width: 300px;
-  }
-
-  .list .back {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 8px;
-    padding: 10px 50px 30px 5px;
-    width: 120px;
-    height: 120px;
-    background-color: #f7f7f9;
-  }
-
-  .list .back a {
-    margin-right: 20px;
-  }
-
-  .about-img ul {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .works {
-    column-gap: 0;
-    grid-template-columns: 15px 1fr 5px;
-  }
-
-  .social {
-    margin: 8px;
-  }
-
-  .navbar {
-    max-width: 425px;
-    padding: 0 25px;
-    justify-content: space-between;
-  }
-
-  .navbar-container {
-    display: none;
-  }
-
-  .headline {
-    width: 100%;
-    left: 0;
-    padding: 0 20px;
-  }
-
-  .mobile {
-    display: block;
-  }
-
-  .heading {
-    font-size: 2rem;
-    width: 266px;
-  }
-
-  .description {
-    width: 380px;
-  }
+@media (min-width: 992px) {
+}
+@media (min-width: 1024px) {
 }
