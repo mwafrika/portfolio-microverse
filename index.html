@@ -17,15 +17,21 @@
     </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <title>Document</title>
   </head>
   <body>
     <main class="main">
-      <nav class="navbar">
+      <nav id="navbar" class="navbar">
         <a class="my-logo" href="#">My logo </a>
-        <div class="navbar-container">
+        <div id="navbar-container" class="navbar-container">
           <div class="navbar-menu">
             <ul class="navbar-menu-list">
               <li class="navbar-menu-item">
@@ -44,8 +50,27 @@
           </div>
         </div>
         <nav class="mobile">
-          <img src="./assert/images/toggle.png" alt="Toggle" />
+          <span class="menuIcon">
+            <img src="./assert/images/toggle.png" alt="Toggle" />
+          </span>
+          <span style="font-size: 2rem" class="closeIcon">
+            <span style="color: rgb(255, 255, 255)">
+              <i class="fas fa-times"></i>
+            </span>
+          </span>
         </nav>
+
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a href="#works">Portfolio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#about">About</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </nav>
       <header class="header">
         <section class="headline">
@@ -91,7 +116,7 @@
           </div>
         </section>
       </header>
-      <section class="works">
+      <section id="works" class="works">
         <div class="card-1">
           <div class="card-1-2">
             <div class="image-container"></div>
@@ -193,7 +218,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section id="about" class="about">
         <div class="text-home-about">
           <h1 class="heading heading-about">About Mwafrika</h1>
           <h3 class="description-about">
@@ -271,7 +296,7 @@
           <div class="border"></div>
         </div>
       </section>
-      <section class="contact-me">
+      <section class="contact-me" id="contact">
         <!-- <div class="left"></div> -->
         <div class="center">
           <form method="POST" action="https://formspree.io/f/xjvlgbay">
@@ -324,5 +349,6 @@
         </div>
       </section>
     </main>
+    <script src="./index.js"></script>
   </body>
 </html>
