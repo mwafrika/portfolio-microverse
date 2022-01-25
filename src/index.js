@@ -1,8 +1,8 @@
-let menuContainer = document.querySelector(".mobile-menu-list");
-let menuItem = document.querySelectorAll(".mobile-menu-item");
-let hamburger = document.querySelector(".mobile");
-let closeIcon = document.querySelector(".closeIcon");
-let menuIcon = document.querySelector(".menuIcon");
+const menuContainer = document.querySelector(".mobile-menu-list");
+const menuItem = document.querySelectorAll(".mobile-menu-item");
+const hamburger = document.querySelector(".mobile");
+const closeIcon = document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
 
 function toggleMenu() {
   if (menuContainer.classList.contains("showMenu")) {
