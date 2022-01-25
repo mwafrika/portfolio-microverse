@@ -47,6 +47,7 @@ img:hover {
   top: 1rem;
   right: 3rem;
   padding: 4px;
+
   /* background: white; */
   cursor: pointer;
 }
@@ -121,6 +122,7 @@ textarea:hover {
   row-gap: 142px;
   flex-direction: column;
   width: 100%;
+
   /* height: 5125px; */
   grid-template-areas:
     "nav-header"
@@ -137,6 +139,7 @@ textarea:hover {
   align-items: center;
   width: 100%;
   height: 72px;
+
   /* position: sticky; */
   background: #fff;
 }
@@ -811,6 +814,7 @@ form {
     width: 100%;
     justify-content: space-between;
     padding: 0 25px;
+
     /* margin-bottom: -80px; */
   }
 
@@ -846,6 +850,7 @@ form {
 
   .social-container {
     width: 40%;
+
     /* margin-top: 100px; */
   }
 
@@ -929,6 +934,7 @@ form {
   .center {
     width: 100%;
   }
+
   .contact-me {
     width: 100%;
   }
@@ -947,9 +953,9 @@ form {
 
   .form-container .form-group {
     display: flex;
-
     margin-bottom: 20px;
   }
+
   .card-1-1 ul li {
     margin-right: 3px;
   }
@@ -1079,6 +1085,7 @@ form {
   .description-about {
     width: 70%;
   }
+
   .title {
     padding-top: 30px;
     width: 100%;
@@ -1087,6 +1094,7 @@ form {
   .text-home-about {
     width: 80%;
   }
+
   .center {
     width: 100%;
   }
@@ -1161,9 +1169,11 @@ form {
   .navbar-container {
     display: block;
   }
+
   .social-container ul {
     width: 45%;
   }
+
   .mobile {
     display: none;
   }
@@ -1193,6 +1203,7 @@ form {
   .social-container {
     width: 50%;
   }
+
   .center {
     align-items: stretch;
   }
