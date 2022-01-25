@@ -963,7 +963,6 @@ form {
     width: 100%;
     justify-content: space-between;
     padding: 0 25px;
-    /* margin-bottom: -80px; */
   }
 
   .navbar-container {
@@ -1105,8 +1104,6 @@ form {
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-
 @media screen and (min-width: 992px) {
   .navbar-container {
     display: block;
@@ -1238,18 +1235,6 @@ form {
   }
 }
 
-@media (min-width: 375px) {
-  /* .works {
-    display: flex;
-    flex-direction: column;
-  } */
-  #navbar-container {
-    /* display: none; */
-  }
-}
-
-@media (min-width: 992px) {
-}
 @media screen and (min-width: 1024px) {
   .heading {
     width: 30%;
