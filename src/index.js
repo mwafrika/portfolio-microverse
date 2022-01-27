@@ -8,8 +8,15 @@ const modal = document.getElementById('popup');
 const closeError = document.getElementById('close-error');
 let errorMessage = document.querySelector('.error-message');
 const email = document.querySelector('#email');
+const name = document.querySelector('#name');
+const message = document.querySelector('#message');
 const form = document.querySelector('.form-contact');
 
+const dataStore = {
+  name: form.elements.name.value,
+  email: form.elements.email.value,
+  message: form.elements.message.value,
+};
 function toggleMenu() {
   if (menuContainer.classList.contains('showMenu')) {
     menuContainer.classList.remove('showMenu');
@@ -111,3 +118,19 @@ form.addEventListener('submit', (e) => {
     errorMessage.style.display = 'none';
   }, 5000);
 });
+
+// get data from local storage when the page is reloaded
+document.addEventListener('DOMContentLoaded', () => {
+  const data = JSON.parse(localStorage.getItem('contact-info', dataStore));
+  if (data) {
+    name.value = data.name;
+    email.value = data.email;
+    message.value = data.message;
+  }
+  console.log(data);
+});
+
+form.onchange = (event) => {
+  dataStore[event.target.id] = event.target.value;
+  localStorage.setItem('contact-info', JSON.stringify(dataStore));
+};
