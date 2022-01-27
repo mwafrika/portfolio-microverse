@@ -722,17 +722,6 @@ form {
     width: 58%;
   }
 
-  .works {
-    grid-template-columns: 1fr;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    column-gap: 20px;
-    height: auto;
-    margin: 15px;
-    width: 100%;
-  }
-
   .card-1,
   .card-2,
   .card-3,
@@ -856,11 +845,12 @@ form {
     grid-template-columns: 1fr;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    row-gap: 70px;
     height: auto;
-    width: 90%;
-    margin: 15px;
+    width: 100%;
   }
 
   .card-1,
@@ -870,7 +860,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 100%;
+    width: 80%;
     height: auto;
     padding: 20px;
     margin-bottom: 3rem;
@@ -1010,22 +1000,11 @@ form {
     height: 40px;
   }
 
-  .works {
-    grid-template-columns: 2rem 1fr 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    column-gap: 20px;
-    height: auto;
-    width: 100%;
-    place-items: start;
-  }
-
   .card-4 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    width: 96%;
+    width: 80%;
     height: auto;
     padding: 20px;
     margin-bottom: 3rem;
@@ -1036,7 +1015,7 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 96%;
+    width: 80%;
     height: auto;
     padding: 20px;
     margin-bottom: 3rem;
@@ -1047,7 +1026,7 @@ form {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    width: 96%;
+    width: 80%;
     height: auto;
     padding: 20px;
     margin-bottom: 3rem;
@@ -1058,7 +1037,7 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 96%;
+    width: 80%;
     height: auto;
     padding: 20px;
     margin-bottom: 3rem;
@@ -1184,17 +1163,6 @@ form {
 
   .mobile {
     display: none;
-  }
-
-  .works {
-    margin: 30px;
-  }
-
-  .card-1,
-  .card-2,
-  .card-3,
-  .card-4 {
-    width: 95%;
   }
 
   .about {
