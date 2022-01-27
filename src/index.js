@@ -35,7 +35,6 @@ menuItem.forEach((item) => {
   item.addEventListener('click', toggleMenu);
 });
 
-// const handleGetJson = () => {
 fetch('data.json', {
   headers: {
     'Content-Type': 'application/json',
