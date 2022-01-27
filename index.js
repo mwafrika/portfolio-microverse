@@ -38,10 +38,7 @@ fetch('data.json', {
 
     data.forEach((item) => {
       const {
-        title,
-        description,
-        technologies,
-        id,
+        title, description, technologies, id,
       } = item;
       const techno = Object.values(technologies);
       container += ` 
@@ -75,8 +72,6 @@ fetch('data.json', {
   })
   .then(() => {
     const btn = document.querySelectorAll('.btn-tonic.bbtn');
-
-
     btn.forEach((item) => {
       item.addEventListener('click', () => {
         modal.style.display = 'block';
@@ -84,6 +79,7 @@ fetch('data.json', {
     });
   })
   .catch((error) => {
+    console.log(error);
   });
 
 const close = document.getElementsByClassName('close-modal')[0];
