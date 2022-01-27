@@ -1,12 +1,12 @@
 const menuContainer = document.querySelector('.mobile-menu-list');
-const menuItem = document.querySelectorAll('.mobile-menu-item');
+let menuItem = document.querySelectorAll('.mobile-menu-item');
 const hamburger = document.querySelector('.mobile');
 const closeIcon = document.querySelector('.closeIcon');
 const menuIcon = document.querySelector('.menuIcon');
-const work = document.getElementById('works');
+let work = document.getElementById('works');
 const modal = document.getElementById('popup');
 const closeError = document.getElementById('close-error');
-const errorMessage = document.querySelector('.error-message');
+let errorMessage = document.querySelector('.error-message');
 const email = document.querySelector('#email');
 const form = document.querySelector('.form-contact');
 
@@ -99,7 +99,6 @@ window.onclick = (event) => {
 closeError.onclick = () => {
   errorMessage.style.display = 'none';
 };
-
 errorMessage.style.display = 'none';
 
 form.addEventListener('submit', (e) => {
