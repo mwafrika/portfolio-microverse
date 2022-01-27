@@ -12,8 +12,6 @@
     "description": "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
     "linkSource": "https://github.com/mwafrika/portfolio-microverse",
     "linkDemo": "https://mwafrika.github.io/portfolio-microverse/",
-    "image":
-      "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "technologies": {"1":"html","2":"Ruby on rails","3": "css","4":"javascript"},
     "id": 2
   },
@@ -22,8 +20,6 @@
     "description": "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     "linkSource": "https://github.com/mwafrika/portfolio-microverse",
     "linkDemo": "https://mwafrika.github.io/portfolio-microverse/",
-    "image":
-      "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "technologies": {"1":"html","2":"Ruby on rails","3": "css","4":"javascript"},
     "id": 3
   },
@@ -32,8 +28,6 @@
     "description": "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
     "linkSource": "https://github.com/mwafrika/portfolio-microverse",
     "linkDemo": "https://mwafrika.github.io/portfolio-microverse/",
-    "image":
-      "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     "technologies": {"1":"html","2":"Ruby on rails","3": "css","4":"javascript"},
     "id": 4
   }
