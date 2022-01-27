@@ -41,9 +41,7 @@ fetch('data.json', {
     let container = '';
 
     data.forEach((item) => {
-      const {
-        title, description, technologies, id,
-      } = item;
+      const { title, description, technologies, id } = item;
       const techno = Object.values(technologies);
       container += ` 
             <div class="card-${id}">
@@ -98,7 +96,6 @@ window.onclick = (event) => {
   }
 };
 
-// error messages
 closeError.onclick = () => {
   errorMessage.style.display = 'none';
 };
