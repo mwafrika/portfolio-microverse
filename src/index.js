@@ -5,10 +5,6 @@ const closeIcon = document.querySelector('.closeIcon');
 const menuIcon = document.querySelector('.menuIcon');
 const work = document.getElementById('works');
 const modal = document.getElementById('popup');
-const closeError = document.getElementById('close-error');
-const errorMessage = document.querySelector('.error-message');
-const email = document.querySelector('#email');
-const form = document.querySelector('.form-contact');
 
 function toggleMenu() {
   if (menuContainer.classList.contains('showMenu')) {
@@ -97,21 +93,3 @@ window.onclick = (event) => {
     modal.style.display = 'none';
   }
 };
-
-// error messages
-closeError.onclick = () => {
-  errorMessage.style.display = 'none';
-};
-
-errorMessage.style.display = 'none';
-
-form.addEventListener('submit', (e) => {
-  if (email.value !== email.value.toLowerCase()) {
-    e.preventDefault();
-    errorMessage.style.display = 'block';
-    email.style.border = '1px solid red';
-  }
-  setTimeout(() => {
-    errorMessage.style.display = 'none';
-  }, 5000);
-});
