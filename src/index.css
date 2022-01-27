@@ -123,6 +123,10 @@ textarea:hover {
   background: #fff;
 }
 
+.skill li {
+  list-style: none;
+}
+
 .navbar-menu ul {
   list-style: none;
 }
@@ -136,6 +140,27 @@ textarea:hover {
   background-color: #ebebff;
   padding: 5px 12px;
   border-radius: 20px;
+}
+
+.btn-popup a {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 12px;
+  color: #6070ff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 136px;
+  height: 48px;
+  border: 1px solid #4053fc;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  text-decoration: none;
 }
 
 .navbar-menu ul li {
@@ -1141,7 +1166,6 @@ form {
   }
 
   .popup-description {
-    width: auto;
     height: auto;
     margin-bottom: 2rem;
     width: 58%;
@@ -1406,12 +1430,12 @@ form {
   border-radius: 1rem;
 }
 
-/* Add Animation */
 @-webkit-keyframes animatetop {
   from {
     top: -300px;
     opacity: 0;
   }
+
   to {
     top: 0;
     opacity: 1;
@@ -1423,6 +1447,7 @@ form {
     top: -300px;
     opacity: 0;
   }
+
   to {
     top: 0;
     opacity: 1;
@@ -1481,10 +1506,6 @@ form {
   column-gap: 0.6rem;
 }
 
-.skill li {
-  list-style: none;
-}
-
 .divider {
   height: 0;
   width: 100%;
@@ -1517,10 +1538,6 @@ form {
   margin-bottom: 1rem;
 }
 
-.btn-popup a {
-  text-decoration: none;
-  color: #67798e;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-left: 1rem;
+.works h2 {
+  display: none;
 }
