@@ -116,7 +116,7 @@ form.addEventListener('submit', (e) => {
   }
   setTimeout(() => {
     errorMessage.style.display = 'none';
-  }, 5000);
+  }, 3000);
 });
 
 // get data from local storage when the page is reloaded
