@@ -182,7 +182,6 @@ textarea:hover {
 
 .contact-me {
   grid-area: contact-me;
-  margin: 12px 0;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -209,10 +208,12 @@ textarea:hover {
   align-items: center;
   padding: 0;
   width: 801px;
-  height: 577px;
+  height: 100%;
+  /* height: 577px; */
   left: 0;
   top: calc(50% - 577px / 2);
   margin: 24px 0;
+  padding-top: 8rem;
 }
 
 .about {
@@ -923,6 +924,8 @@ form {
 
   .contact-me {
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .border {
@@ -964,6 +967,11 @@ form {
 
   .tonic-popup {
     width: 6.8rem;
+  }
+
+  form {
+    max-width: 100vw;
+    max-height: 100vh;
   }
 }
 
@@ -1507,4 +1515,15 @@ form {
 
 .works h2 {
   display: none;
+}
+
+.error-message {
+  height: auto;
+  width: 100%;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
 }
