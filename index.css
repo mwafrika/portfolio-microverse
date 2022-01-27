@@ -209,11 +209,9 @@ textarea:hover {
   padding: 0;
   width: 801px;
   height: 100%;
-  /* height: 577px; */
   left: 0;
   top: calc(50% - 577px / 2);
   margin: 24px 0;
-  padding-top: 8rem;
 }
 
 .about {
@@ -372,8 +370,8 @@ textarea:hover {
 form {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 600px;
   max-width: 577px;
@@ -920,6 +918,9 @@ form {
 
   .center {
     width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
   }
 
   .contact-me {
@@ -1518,6 +1519,7 @@ form {
 }
 
 .error-message {
+  display: none;
   height: auto;
   width: 100%;
   background-color: #fefefe;
@@ -1526,4 +1528,16 @@ form {
   border: 1px solid #888;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
+  position: relative;
+}
+
+.error-message-close {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  color: #67798e;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
