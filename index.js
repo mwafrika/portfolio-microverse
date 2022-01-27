@@ -4,6 +4,7 @@ const hamburger = document.querySelector('.mobile');
 const closeIcon = document.querySelector('.closeIcon');
 const menuIcon = document.querySelector('.menuIcon');
 const work = document.getElementById('works');
+const modal = document.getElementById('popup');
 
 function toggleMenu() {
   if (menuContainer.classList.contains('showMenu')) {
@@ -40,15 +41,10 @@ fetch('data.json', {
         title,
         description,
         technologies,
-        image,
-        linkSource,
-        linkDemo,
         id,
       } = item;
       const techno = Object.values(technologies);
-      container =
-        container +
-        ` 
+      container += ` 
             <div class="card-${id}">
               <div class="card-1-2">
                 <div class="image-container${id}"></div>
@@ -76,12 +72,10 @@ fetch('data.json', {
           `;
     });
     work.innerHTML = container;
-    console.log('hey', work);
   })
   .then(() => {
     const btn = document.querySelectorAll('.btn-tonic.bbtn');
 
-    console.log('My data', btn);
 
     btn.forEach((item) => {
       item.addEventListener('click', () => {
@@ -90,18 +84,16 @@ fetch('data.json', {
     });
   })
   .catch((error) => {
-    console.log('error', error);
   });
 
 const close = document.getElementsByClassName('close-modal')[0];
-const modal = document.getElementById('popup');
 
 close.onclick = () => {
   modal.style.display = 'none';
 };
 
 window.onclick = (event) => {
-  if (event.target == modal) {
+  if (event.target === modal) {
     modal.style.display = 'none';
   }
 };
