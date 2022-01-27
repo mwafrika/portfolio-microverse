@@ -41,10 +41,8 @@ fetch('data.json', {
         description,
         technologies,
         image,
-        link,
-        linkText,
-        link2,
-        linkText2,
+        linkSource,
+        linkDemo,
         id,
       } = item;
       const techno = Object.values(technologies);
@@ -67,7 +65,6 @@ fetch('data.json', {
                 <p class="desc">${description}</p>
                 <ul class="skills">
                   <li>${techno[0]}</li>
-                  <li>${techno[1]}</li>
                   <li>${techno[2]}</li>
                   <li>${techno[3]}</li>
                 </ul>

@@ -266,7 +266,7 @@ textarea:hover {
   background-color: white;
   height: 674px;
   height: 846px;
-  border-bottom-left-radius: 19%;
+  border-bottom-left-radius: 130px;
   background-image: url('./assert/images/try.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -338,8 +338,8 @@ textarea:hover {
   font-style: normal;
   font-weight: normal;
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  line-height: 24px;
+  font-size: 1.25rem;
+  line-height: 28px;
   color: #172b4d;
 }
 
@@ -782,6 +782,11 @@ form {
   .border {
     width: 100%;
   }
+
+  /* .description-category {
+    display: flex;
+    flex-direction: column;
+  } */
 }
 
 @media screen and (min-width: 320px) {
@@ -795,12 +800,12 @@ form {
   .headline {
     width: 100%;
     left: 0;
-    padding: 0 40px;
-    top: calc(35% - 268px / 2);
+    padding: 0 17px;
+    top: calc(36% - 268px / 2);
   }
 
   .heading {
-    font-size: 2rem;
+    font-size: 2.1rem;
     width: 100%;
     height: 35%;
   }
@@ -930,6 +935,22 @@ form {
   .card-1-1 ul li {
     margin-right: 3px;
   }
+
+  .description-category {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-description,
+  .popup-description {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .tonic-popup {
+    width: 6.8rem;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -953,11 +974,11 @@ form {
   .headline {
     width: 100%;
     left: 0;
-    padding: 0 40px;
+    padding: 0 9rem;
   }
 
   .description {
-    width: 45%;
+    width: 80%;
   }
 
   .subdescription {
@@ -1107,6 +1128,29 @@ form {
   .form-container {
     width: 60%;
   }
+
+  .description-category {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-description {
+    width: 40%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .popup-description {
+    width: auto;
+    height: auto;
+    margin-bottom: 2rem;
+    width: 58%;
+    margin-right: 2%;
+  }
+
+  .tonic-popup {
+    width: 6.8rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -1160,6 +1204,11 @@ form {
   .social-container {
     width: 50%;
   }
+
+  .description-category {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -1176,11 +1225,16 @@ form {
   }
 
   .description-about {
-    width: 45%;
+    width: 55%;
   }
 
   .heading {
     width: 22%;
+  }
+
+  .description-category {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -1194,7 +1248,8 @@ form {
   }
 
   .heading {
-    width: 48%;
+    width: 100%;
+    font-size: 3rem;
   }
 
   .social-container {
@@ -1235,6 +1290,11 @@ form {
   form {
     max-width: 100vw;
   }
+
+  .description-category {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 425px) {
@@ -1245,31 +1305,128 @@ form {
 
 @media screen and (min-width: 1024px) {
   .heading {
-    width: 30%;
+    width: 67%;
   }
 
   .form-container {
     width: 50%;
   }
+
+  .description-category {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .heading {
-    width: 24%;
+    width: 42%;
   }
 
   .form-container {
     width: 40%;
   }
+
+  .description-category {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .heading {
+    width: 22%;
+  }
+
+  .description {
+    width: 60%;
+  }
+
+  .social-container ul {
+    width: 20%;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    width: 45%;
+  }
+
+  .works {
+    grid-template-columns: 2rem 1fr 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 20px;
+    height: auto;
+    width: 100%;
+    place-items: start;
+  }
+
+  .text-home-about {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 107px;
+  }
+
+  .description-about {
+    font-size: 20px;
+    width: 40%;
+  }
 }
 
 .popup {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin: 0 auto;
-  background-color: white;
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.content-modal {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
   padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border-radius: 1rem;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 .myHeader {
@@ -1277,17 +1434,34 @@ form {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
+}
+
+.myHeader h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .pop-size {
   height: 2rem;
 }
 
+.pop-size .dot,
+.pop-size .cano {
+  font-size: 0.8rem;
+}
+
+.pop-size ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
 .img-popup {
   width: 100%;
   margin-bottom: 0;
   margin-left: 0;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .img-popup > p {
@@ -1303,7 +1477,8 @@ form {
 .skill {
   display: flex;
   margin: 1.5rem 10px;
-  justify-content: space-between;
+  justify-content: flex-start;
+  column-gap: 0.6rem;
 }
 
 .skill li {
@@ -1311,12 +1486,41 @@ form {
 }
 
 .divider {
-  height: 1px;
+  height: 0;
   width: 100%;
-  background-color: gray;
+  border: 1px solid #ebecf0;
   margin-bottom: 1.5rem;
 }
 
 .tonic-popup {
-  width: 112px;
+  width: 8.5rem;
+  height: 3rem;
+  font-size: 0.9375rem;
+}
+
+.tonic-popup img {
+  margin-left: 1rem;
+}
+
+.close-modal {
+  color: #67798e;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  color: #67798e;
+}
+
+.popup-description {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-popup a {
+  text-decoration: none;
+  color: #67798e;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 1rem;
 }
