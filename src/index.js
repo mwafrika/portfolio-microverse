@@ -1,12 +1,12 @@
 const menuContainer = document.querySelector('.mobile-menu-list');
-let menuItem = document.querySelectorAll('.mobile-menu-item');
+const menuItem = document.querySelectorAll('.mobile-menu-item');
 const hamburger = document.querySelector('.mobile');
 const closeIcon = document.querySelector('.closeIcon');
 const menuIcon = document.querySelector('.menuIcon');
-let work = document.getElementById('works');
+const work = document.getElementById('works');
 const modal = document.getElementById('popup');
 const closeError = document.getElementById('close-error');
-let errorMessage = document.querySelector('.error-message');
+const errorMessage = document.querySelector('.error-message');
 const email = document.querySelector('#email');
 const name = document.querySelector('#name');
 const message = document.querySelector('#message');
@@ -47,7 +47,9 @@ fetch('data.json', {
     let container = '';
 
     data.forEach((item) => {
-      const { title, description, technologies, id } = item;
+      const {
+        title, description, technologies, id,
+      } = item;
       const techno = Object.values(technologies);
       container += ` 
             <div class="card-${id}">
