@@ -93,12 +93,12 @@ fetch('data.json', {
 const close = document.getElementsByClassName('close-modal')[0];
 
 close.onclick = () => {
-  modal.style.display = 'block';
+  modal.style.display = 'none';
 };
 
 window.onclick = (event) => {
   if (event.target === modal) {
-    modal.style.display = 'block';
+    modal.style.display = 'none';
   }
 };
 
