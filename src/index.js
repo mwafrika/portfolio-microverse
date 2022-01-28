@@ -128,7 +128,6 @@ document.addEventListener('DOMContentLoaded', () => {
     email.value = data.email;
     message.value = data.message;
   }
-  console.log(data);
 });
 
 form.onchange = (event) => {
