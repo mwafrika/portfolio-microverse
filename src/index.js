@@ -8,8 +8,15 @@ const modal = document.getElementById('popup');
 const closeError = document.getElementById('close-error');
 const errorMessage = document.querySelector('.error-message');
 const email = document.querySelector('#email');
+const name = document.querySelector('#name');
+const message = document.querySelector('#message');
 const form = document.querySelector('.form-contact');
 
+const dataStore = {
+  name: form.elements.name.value,
+  email: form.elements.email.value,
+  message: form.elements.message.value,
+};
 function toggleMenu() {
   if (menuContainer.classList.contains('showMenu')) {
     menuContainer.classList.remove('showMenu');
@@ -28,7 +35,6 @@ menuItem.forEach((item) => {
   item.addEventListener('click', toggleMenu);
 });
 
-// const handleGetJson = () => {
 fetch('data.json', {
   headers: {
     'Content-Type': 'application/json',
@@ -98,11 +104,9 @@ window.onclick = (event) => {
   }
 };
 
-// error messages
 closeError.onclick = () => {
   errorMessage.style.display = 'none';
 };
-
 errorMessage.style.display = 'none';
 
 form.addEventListener('submit', (e) => {
@@ -113,5 +117,21 @@ form.addEventListener('submit', (e) => {
   }
   setTimeout(() => {
     errorMessage.style.display = 'none';
-  }, 5000);
+  }, 3000);
 });
+
+// get data from local storage when the page is reloaded
+document.addEventListener('DOMContentLoaded', () => {
+  const data = JSON.parse(localStorage.getItem('contact-info', dataStore));
+  if (data) {
+    name.value = data.name;
+    email.value = data.email;
+    message.value = data.message;
+  }
+  console.log(data);
+});
+
+form.onchange = (event) => {
+  dataStore[event.target.id] = event.target.value;
+  localStorage.setItem('contact-info', JSON.stringify(dataStore));
+};
