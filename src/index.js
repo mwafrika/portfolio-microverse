@@ -47,9 +47,7 @@ fetch('data.json', {
     let container = '';
 
     data.forEach((item) => {
-      const {
-        title, description, technologies, id,
-      } = item;
+      const { title, description, technologies, id } = item;
       const techno = Object.values(technologies);
       container += ` 
             <div class="card-${id}">
@@ -95,12 +93,12 @@ fetch('data.json', {
 const close = document.getElementsByClassName('close-modal')[0];
 
 close.onclick = () => {
-  modal.style.display = 'none';
+  modal.style.display = 'block';
 };
 
 window.onclick = (event) => {
   if (event.target === modal) {
-    modal.style.display = 'none';
+    modal.style.display = 'block';
   }
 };
 
