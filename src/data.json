@@ -1,9 +1,9 @@
 {
   "project1": {
-    "title": "Tonic",
-    "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    "linkSource": "https://github.com/mwafrika/portfolio-microverse",
-    "linkDemo": "https://mwafrika.github.io/portfolio-microverse/",
+    "title": "Hackerthon",
+    "description": "This project is to help demostrating or put into practice what we have learned at Microverse for the time we spent at Microverse program until now.",
+    "linkSource": "https://github.com/mwafrika/Capstone-hackerthon-webdevelopment",
+    "linkDemo": "https://mwafrika.github.io/Capstone-hackerthon-webdevelopment/src/about.html",
     "technologies": {"1":"html","2":"Ruby on rails","3": "css","4":"javascript"},
     "id": 1
   },
